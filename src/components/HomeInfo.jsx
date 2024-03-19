@@ -53,8 +53,7 @@ const HomeInfo = ({ currentStage }) => {
       <div className="info-box">
         <p className="font-medium sm:text-xl text-center">
           Need help with a project or looking to collaborate?
-          <br />
-          Let's connect and discuss your ideas.
+       
         </p>
 
         <Link to="/contact" className="neo-brutalism-white neo-btn">

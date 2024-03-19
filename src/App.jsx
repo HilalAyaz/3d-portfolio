@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 const App = () => {
   return (
     <Router>
-      <main className="bg-gray-400/50 h-full">
+      <main className="bg-gray-400/50 h-full w-full">
         <ToastContainer />
         <Navbar />
         <Routes>

@@ -21,7 +21,7 @@ const Footer = () => {
       const windowHeight = document.documentElement.clientHeight;
       const scrollPercentage = (scrollHeight / windowHeight) * 100;
 
-      if (scrollPercentage > 100) {
+      if (scrollPercentage > 60) {
         setShowScrollButton(true);
       } else {
         setShowScrollButton(false);
@@ -47,7 +47,7 @@ const Footer = () => {
           }}
           onClick={scrollToTop}
         >
-          <FaArrowCircleUp size={32} color="cyan" />
+          <FaArrowCircleUp size={32} color="#0072ff" />
         </div>
       )}
       <div className="mt-10 p-5 flex items-center justify-center">

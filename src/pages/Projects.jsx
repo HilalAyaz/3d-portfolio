@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const Projects = () => {
   return (
     <section className="max-container">
-      <div className="w-[500px] lg:w-[700px] ">
+      <div className="w-full">
         <h1 className="head-text">
           My{" "}
           <span className="blue-gradient_text font-semibold drop-shadow-lg">
@@ -24,25 +24,25 @@ const Projects = () => {
           </p>
         </div>
         <div>
-            <p className="mt-5 text-lg text-slate-500 font-semibold">
-              You can view all my projects on my GitHub Profile.
-            </p>
-            <div className="flex items-center gap-2 font-poppins">
-              <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
-              <Link
-                to="https://github.com/HilalAyaz"
-                target="_blank"
-                rel="noreferrer noopenner"
-                className="font-semibold text-blue-400 hover:text-blue-900 duration-150 ease-in"
-              >
-                Visit GitHub
-              </Link>
-            </div>
+          <p className="mt-5 text-lg text-slate-500 font-semibold">
+            You can view all my projects on my GitHub Profile.
+          </p>
+          <div className="flex items-center gap-2 font-poppins">
+            <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+            <Link
+              to="https://github.com/HilalAyaz"
+              target="_blank"
+              rel="noreferrer noopenner"
+              className="font-semibold text-blue-400 hover:text-blue-900 duration-150 ease-in"
+            >
+              Visit GitHub
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="flex flex-wrap my-20 gap-16 w-[500px] lg:w-[700px]">
+      <div className="flex flex-wrap my-20 gap-16 w-full">
         {projects.map((project) => (
-          <div className="w-[500px] lg:w-full" key={project.name}>
+          <div   key={project.name}>
             <div className="block-container w-12 h-12">
               <div className={`btn-back rounded-xl ${project.theme}  `} />
               <div className=" btn-front rounded-xl flex justify-center items-center ">
@@ -58,9 +58,7 @@ const Projects = () => {
                 {project.name}
               </h4>
               <p className=" mt-2 text-slate-500">{project.description}</p>
-              <div className="py-4 w-full">
-                <img src="https://placeholder.com/600x300" alt={project.name} />
-              </div>
+
               <div className="mt-5 flex items-center gap-2 font-poppins">
                 <img
                   src={arrow}
